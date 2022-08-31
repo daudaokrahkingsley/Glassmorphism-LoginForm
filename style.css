@@ -1,0 +1,198 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.line1 {
+  width: 27%;
+  height: 20rem;
+  left: 12%;
+  top: 12%;
+  position: absolute;
+  border-bottom-left-radius: 30rem;
+  border-top-right-radius: 10rem;
+  background: rgb(177, 51, 200);
+  background: linear-gradient(
+    90deg,
+    rgba(177, 51, 200, 1) 55%,
+    rgba(218, 174, 26, 1) 88%
+  );
+}
+
+.line2 {
+  border: 1px solid red;
+  width: 28%;
+  height: 20rem;
+  left: 60%;
+  top: 45%;
+  position: absolute;
+  border-bottom-left-radius: 30rem;
+  border-top-right-radius: 10rem;
+  border-bottom-left-radius: 30rem;
+  border-top-right-radius: 10rem;
+  background-color: red;
+}
+
+.menubox {
+  border: 1px solid rgba(0, 4, 255, 0.397);
+  width: 43%;
+  height: 30rem;
+  left: 30%;
+  top: 18%;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.137);
+  backdrop-filter: blur(15px);
+  box-shadow: 5px 10px rgba(10, 10, 10, 0.158);
+}
+
+.menubox h2 {
+  color: white;
+  margin-left: 15rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+  margin-top: 28px;
+  margin-left: 80px;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 30px;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.151);
+  text-align: center;
+  background-color: transparent;
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.25),
+    -5px -5px 10px rgba(255, 255, 255, 0.03);
+  color: white;
+}
+input:focus {
+  background-color: rgb(199, 18, 48);
+}
+
+.usa {
+  color: antiquewhite;
+  margin-left: 6rem;
+}
+
+.usa1 {
+  color: antiquewhite;
+  margin-left: 6rem;
+}
+
+.usa2 {
+  color: antiquewhite;
+  margin-left: 6rem;
+}
+
+button {
+  background-color: rgba(36, 84, 155, 0.438);
+  width: 60%;
+  height: 30px;
+  outline: none;
+  margin-left: 78px;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: rgb(3, 12, 3);
+  }
+  .line1 {
+    width: 27%;
+    height: 15rem;
+    left: 4%;
+    top: 12%;
+    position: absolute;
+    border-bottom-left-radius: 30rem;
+    border-top-right-radius: 10rem;
+    background: rgb(177, 51, 200);
+    background: linear-gradient(
+      90deg,
+      rgba(177, 51, 200, 1) 55%,
+      rgba(218, 174, 26, 1) 88%
+    );
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25),
+      -5px -5px 10px rgba(255, 255, 255, 0.03);
+  }
+  .line2 {
+    border: 1px solid red;
+    width: 27%;
+    height: 15rem;
+    left: 67%;
+    top: 57%;
+    position: absolute;
+    border-bottom-left-radius: 30rem;
+    border-top-right-radius: 10rem;
+    background-color: red;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.25),
+      -5px -5px 10px rgba(255, 255, 255, 0.03);
+    color: white;
+  }
+  .menubox {
+    border: 1px solid #f3f4f525;
+    width: 75%;
+    height: 27rem;
+    left: 14%;
+    top: 18%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.137);
+    backdrop-filter: blur(15px);
+    box-shadow: 5px 10px rgba(10, 10, 10, 0.158);
+  }
+  .menubox h2 {
+    color: white;
+    margin-left: 10rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .usa {
+    color: antiquewhite;
+    margin-left: 3rem;
+  }
+  .usa1 {
+    color: antiquewhite;
+    margin-left: 3rem;
+  }
+
+  .usa2 {
+    color: antiquewhite;
+    margin-left: 3rem;
+  }
+
+  input {
+    margin-top: 28px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 30px;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.151);
+    text-align: center;
+    background-color: transparent;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.25),
+      -5px -5px 10px rgba(255, 255, 255, 0.03);
+    color: white;
+  }
+
+  button {
+    background-color: rgba(36, 84, 155, 0.438);
+    width: 60%;
+    height: 30px;
+    outline: none;
+    margin-left: 50px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  .allp {
+    flex-direction: column;
+  }
+}
